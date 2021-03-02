@@ -43,7 +43,7 @@ $(function() {
         $.post('/api/reguser', data, function(res) {
             // console.log(res);
             if (res.status != 0) {
-                console.log(res);
+                // console.log(res);
                 return layer.msg(res.message);
             }
             layer.msg('注册成功，请登录')
